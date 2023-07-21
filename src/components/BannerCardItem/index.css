@@ -1,3 +1,14 @@
+.banner-card-item {
+  border: 1px solid #cbced2;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 32px;
+  max-width: 1140px;
+  list-style-type: none;
+}
+
 .card-1 {
   background-image: url('https://assets.ccbp.in/frontend/react-js/reusable-banners-card-1-bg.png');
   background-size: cover;
@@ -18,19 +29,28 @@
   background-size: cover;
 }
 
-/* Write your code here. */
-.card-heading {
+.heading {
   color: #326a9d;
+  font-family: 'Roboto';
+  font-size: 36px;
+  font-weight: bold;
 }
-.card-description {
-  font-size: 18px;
+
+.description {
   color: #64748b;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
-.card-btn {
+
+.show-more-btn {
   color: #326a9d;
-  border: 2x solid #326a9d;
-  height: 30px;
+  background-color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #326a9d;
   border-radius: 5px;
-  font-weight: 700;
-  background-color: #fff;
+  padding: 8px;
 }

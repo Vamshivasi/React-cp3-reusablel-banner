@@ -1,5 +1,6 @@
-import './App.css'
 import BannerCardItem from './components/BannerCardItem'
+
+import './App.css'
 
 const bannerCardsList = [
   {
@@ -23,14 +24,14 @@ const bannerCardsList = [
   },
 ]
 
-const App = () => {
-  ;<div className="cards-bg-con">
-    <ul>
-      {bannerCardsList.map(eachObj => (
-        <BannerCardItem sourceItem={eachObj} key={eachObj.id} />
+const App = () => (
+  <div className="app-container">
+    <ul className="banner-cards-list">
+      {bannerCardsList.map(eachBanner => (
+        <BannerCardItem bannerDetails={eachBanner} key={eachBanner.id} />
       ))}
     </ul>
   </div>
-}
+)
 
 export default App
